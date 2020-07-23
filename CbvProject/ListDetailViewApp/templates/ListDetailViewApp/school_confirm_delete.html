@@ -1,0 +1,12 @@
+{% extends 'ListDetailViewApp/base.html' %}
+
+{% block body_block %}
+
+    <h2>Delete {{ school.name }} ?</h2>
+    <form method="post">
+        {% csrf_token %}
+    <input type="submit" class="btn btn-danger" value="Delete">
+    <a href="{% url 'ListDetailViewApp:list' %}">Cancel</a>
+    </form>
+
+{% endblock %}
