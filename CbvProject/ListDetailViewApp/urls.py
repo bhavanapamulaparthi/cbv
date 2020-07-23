@@ -4,6 +4,7 @@ from . import views
 
 app_name = 'ListDetailViewApp'
 
+#the below are the installed apps in the project
 urlpatterns = [
     path('',views.IndexView.as_view(),name='index'),
     path('list',views.SchoolListView.as_view(),name='list'),
